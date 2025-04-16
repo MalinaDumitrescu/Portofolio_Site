@@ -4,6 +4,8 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
     ro: {
         translation: {
+
+
             home: "Acasă",
             intro: "Aici poți vizualiza CV-ul meu profesional și creativ.",
             profile: "Profil",
@@ -70,6 +72,8 @@ const resources = {
     },
     en: {
         translation: {
+
+
             home: "Home",
             intro: "Here you can view my professional and creative CV.",
             profile: "Profile",
@@ -115,10 +119,10 @@ const resources = {
 
             status: "Open to work",
 
-            funFacts: "Lucruri amuzante despre mine",
-            fact1: "Am făcut peste 100 de macarons.",
-            fact2: "Îmi place să codez ascultând jazz.",
-            fact3: "Visez să lucrez remote din Alpi.",
+            funFacts: "Fun facts about me",
+            fact1: "I’ve baked over 100 macarons.",
+            fact2: "I love coding while listening to jazz.",
+            fact3: "I dream of working remotely from the Alps.",
 
             leaveMessage: "Leave me a message",
             writeMessage: "Write your thoughts here...",
@@ -136,6 +140,8 @@ const resources = {
     },
     de: {
         translation: {
+
+
             home: "Startseite",
             intro: "Hier kannst du meinen professionellen und kreativen Lebenslauf einsehen.",
             profile: "Profil",

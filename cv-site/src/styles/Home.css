@@ -47,9 +47,13 @@
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
+.avatar:hover {
+    transform: scale(1.05);
+}
+
 
 h1 {
     font-size: 2rem;
@@ -125,4 +129,39 @@ h1 {
 .skill-icon {
     color: #007bff;
     flex-shrink: 0;
+}
+
+
+
+
+/* === Home Introduction Section === */
+.home-intro {
+    margin-bottom: 60px;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: var(--text);
+}
+
+.section-divider {
+    height: 3px;
+    width: 50px;
+    background-color: #007bff;
+    border: none;
+    margin: 20px auto;
+}
+
+/* === Fun Facts Section fix === */
+.fun-facts {
+    margin-top: 0px; /* elimină spațiul inițial dacă există */
+}
+
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto 30px;
+    max-width: 800px;
 }

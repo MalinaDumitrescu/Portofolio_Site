@@ -4,50 +4,49 @@ import avatar from '../assets/avatar.jpg';
 import '../styles/Home.css';
 
 import MessageBox from '../components/MessageBox';
-
 import StatusBadge from '../components/StatusBadge';
-
 import Timeline from '../components/Timeline';
-
 import FunFacts from '../components/FunFacts';
 
 import { Code, Atom, Server, Paintbrush } from 'lucide-react';
-
 import { useTranslation } from 'react-i18next';
-
 import { Typewriter } from 'react-simple-typewriter';
 
 function Home() {
     const { t } = useTranslation();
+
     return (
         <div className="home-container">
-            <h1>Bine ai venit!</h1>
-            <p>Aici poți vizualiza CV-ul meu profesional și creativ.</p>
 
-            <img src={avatar} alt="Profil" className="avatar" data-aos="fade-down" />
+            {/* ▶️ Intro Section */}
+            <div className="home-intro">
+                <img src={avatar} alt="Profil" className="avatar" data-aos="zoom-in" />
 
-            <h1>
-                <Typewriter
-                    words={['Bun venit!', 'Welcome!', 'Willkommen!']}
-                    loop={0}
-                    cursor
-                    cursorStyle="|"
-                    typeSpeed={70}
-                    deleteSpeed={50}
-                    delaySpeed={1500}
-                />
-            </h1>
+                <h1 data-aos="fade-up">
+                    <Typewriter
+                        words={['Bun venit!', 'Welcome!', 'Willkommen!']}
+                        loop={0}
+                        cursor
+                        cursorStyle="|"
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1500}
+                    />
+                </h1>
 
-            <p>{t('intro')}</p>
+                <hr className="section-divider" />
 
-            <p className="about-text" data-aos="fade-up">
-                {t('aboutMe')}
-            </p>
+                <p className="intro-text">{t('intro')}</p>
+                <p className="about-text" data-aos="fade-up">{t('aboutMe')}</p>
+            </div>
 
+            {/* ▶️ Timeline */}
             <Timeline />
 
+            {/* ▶️ Fun Facts */}
             <FunFacts />
 
+            {/* ▶️ Skills Section */}
             <section className="skills-section">
                 <h2>{t('skillSection')}</h2>
 
@@ -92,17 +91,16 @@ function Home() {
                 </div>
             </section>
 
+            {/* ▶️ CV Buttons */}
             <div className="button-group">
                 <Link to="/cv1" className="cv-button">{t('cv1')}</Link>
                 <Link to="/cv2" className="cv-button">{t('cv2')}</Link>
             </div>
 
+            {/* ▶️ Badge + Message */}
             <StatusBadge />
-
             <MessageBox />
-
         </div>
-
     );
 }
 
