@@ -1,10 +1,44 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import '../styles/Footer.css';
 
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} Numele Tău. Toate drepturile rezervate.</p>
+            <p>&copy; {new Date().getFullYear()} Mălina Dumitrescu. {t('copyright')}</p>
+
+            <div className="footer-social">
+                <p>{t('contactMe')}:</p>
+
+                <a
+                    href="mailto:malina.dumitrescu24@gmail.com"
+                    className="icon-link"
+                    title={t('email_mes')}
+                >
+                    <Mail size={20} />
+                </a>
+
+
+                <a
+                    href="https://github.com/username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="icon-link"
+                >
+                    <Github size={20} />
+                </a>
+                <a
+                    href="https://linkedin.com/in/username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="icon-link"
+                >
+                    <Linkedin size={20} />
+                </a>
+            </div>
         </footer>
     );
 }

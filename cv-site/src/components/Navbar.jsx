@@ -21,12 +21,14 @@ function Navbar() {
     }, [darkMode]);
 
     useEffect(() => {
-        i18n.changeLanguage(language);
         localStorage.setItem('language', language);
+        i18n.changeLanguage(language);
     }, [language, i18n]);
 
-    const toggleLanguage = () =>
-        setLanguage(prev => (prev === 'ro' ? 'en' : 'ro'));
+    const toggleLanguage = () => {
+        const nextLang = language === 'ro' ? 'en' : language === 'en' ? 'de' : 'ro';
+        setLanguage(nextLang);
+    };
 
     const toggleTheme = () => setDarkMode(prev => !prev);
 
@@ -46,8 +48,9 @@ function Navbar() {
 
             <div className="nav-buttons">
                 <button onClick={toggleLanguage}>
-                    {language === 'ro' ? 'EN' : 'RO'}
+                    {language.toUpperCase()}
                 </button>
+
                 <button onClick={toggleTheme}>
                     {darkMode ? '☀️' : '🌙'}
                 </button>

@@ -9,11 +9,14 @@ body {
 :root {
     --bg: #ffffff;
     --text: #111111;
+    --label-color: #333333; /* pentru iconițe și skill names */
 }
 
 .dark-mode {
     --bg: #121212;
     --text: #eeeeee;
+    --label-color: #ffffff; /* alb pentru dark mode */
+
 }
 
 .app {

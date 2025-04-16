@@ -20,18 +20,109 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .cv-button {
     background-color: #007bff;
     color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .cv-button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.skills-section {
+    max-width: 600px;
+    margin: 50px auto 0;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill span {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--label-color);
+}
+
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fill {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 10px;
+    animation: fill 1s ease-out;
+}
+
+@keyframes fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.skill:hover .fill {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.skill-icon {
+    color: #007bff;
+    flex-shrink: 0;
 }

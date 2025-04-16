@@ -6,3 +6,26 @@
     border-top: 1px solid #ccc;
     font-size: 0.9rem;
 }
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-link {
+    color: var(--text);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+    color: #d93025; /* roșu Gmail */
+}
