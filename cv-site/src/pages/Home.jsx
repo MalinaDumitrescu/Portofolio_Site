@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import avatar from '../assets/avatar.jpg';
 import '../styles/Home.css';
 
+import MessageBox from '../components/MessageBox';
+
 import StatusBadge from '../components/StatusBadge';
 
 import Timeline from '../components/Timeline';
@@ -96,6 +98,8 @@ function Home() {
             </div>
 
             <StatusBadge />
+
+            <MessageBox />
 
         </div>
 

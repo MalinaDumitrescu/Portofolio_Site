@@ -53,7 +53,12 @@ const resources = {
             funFacts: "Lucruri amuzante despre mine",
             fact1: "Am făcut peste 100 de macarons.",
             fact2: "Îmi place să codez ascultând jazz.",
-            fact3: "Visez să lucrez remote din Alpi."
+            fact3: "Visez să lucrez remote din Alpi.",
+
+            message_title: "Lasă-mi un mesaj",
+            placeholder: "Scrie aici gândurile tale...",
+            message_button: "Trimite 💌",
+
 
         }
 
@@ -108,7 +113,14 @@ const resources = {
             funFacts: "Lucruri amuzante despre mine",
             fact1: "Am făcut peste 100 de macarons.",
             fact2: "Îmi place să codez ascultând jazz.",
-            fact3: "Visez să lucrez remote din Alpi."
+            fact3: "Visez să lucrez remote din Alpi.",
+
+            message_title: "Leave me a message",
+            placeholder: "Write your thoughts here...",
+            message_button: "Send 💌",
+
+
+
 
         }
     },
@@ -162,7 +174,12 @@ const resources = {
             funFacts: "Witzige Fakten über mich",
             fact1: "Ich habe über 100 Macarons gebacken.",
             fact2: "Ich liebe es, beim Programmieren Jazz zu hören.",
-            fact3: "Mein Traum ist es, remote aus den Alpen zu arbeiten."
+            fact3: "Mein Traum ist es, remote aus den Alpen zu arbeiten.",
+
+            message_title: "Hinterlasse mir eine Nachricht",
+            placeholder: "Schreibe hier deine Gedanken...",
+            message_button: "Senden 💌",
+
 
         }
     }
