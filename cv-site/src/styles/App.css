@@ -10,12 +10,20 @@ body {
     --bg: #ffffff;
     --text: #111111;
     --label-color: #333333; /* pentru iconițe și skill names */
+
+    /* NOU: pentru dropdown light */
+    --dropdown-bg: #f0f0f0;
+    --dropdown-text: #111;
 }
 
 .dark-mode {
     --bg: #121212;
     --text: #eeeeee;
     --label-color: #ffffff; /* alb pentru dark mode */
+
+    /* NOU: pentru dropdown dark */
+    --dropdown-bg: #222;
+    --dropdown-text: #fff;
 
 }
 

@@ -65,6 +65,18 @@ const resources = {
 
             message_sent: "Mesaj trimis cu succes!",
 
+            projects: "Proiecte",
+            projectsTitle: "Proiectele mele",
+            projectsIntro: "Aici găsești o selecție din proiectele mele personale și academice.",
+
+            web: "Aplicații Web",
+            mobile: "Mobile",
+            academic: "Academice",
+            fun: "Creative / Fun",
+
+
+
+
 
 
         }
@@ -131,6 +143,16 @@ const resources = {
             sent: "Sent",
 
             message_sent: "Message sent successfully!",
+
+            projects: "Projects",
+            projectsTitle: "My Projects",
+            projectsIntro: "Here you’ll find a selection of my personal and academic projects.",
+
+            web: "Web Apps",
+            mobile: "Mobile Apps",
+            academic: "Academic",
+            fun: "Creative / Fun",
+
 
 
 
@@ -199,6 +221,16 @@ const resources = {
             sent: "Gesendet",
 
             message_sent: "Nachricht erfolgreich gesendet!",
+
+            projects: "Projekte",
+            projectsTitle: "Meine Projekte",
+            projectsIntro: "Hier findest du eine Auswahl meiner persönlichen und akademischen Projekte.",
+
+            web: "Web-Apps",
+            mobile: "Mobile Apps",
+            academic: "Akademisch",
+            fun: "Kreativ / Spaß",
+
 
 
 

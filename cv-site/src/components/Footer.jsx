@@ -23,7 +23,7 @@ function Footer() {
 
 
                 <a
-                    href="https://github.com/username"
+                    href="https://github.com/MalinaDumitrescu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="icon-link"
@@ -31,7 +31,7 @@ function Footer() {
                     <Github size={20} />
                 </a>
                 <a
-                    href="https://linkedin.com/in/username"
+                    href="https://www.linkedin.com/in/m%C4%83lina-dumitrescu-217a36287/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="icon-link"

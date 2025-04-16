@@ -44,6 +44,20 @@ function Navbar() {
                 <Link className={location.pathname === '/' ? 'active' : ''} to="/">
                     {t('home')}
                 </Link>
+
+                {/* PROIECTE + Dropdown */}
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        {t('projects')} ▾
+                    </button>
+                    <div className="dropdown-content">
+                        <Link to="/projects/web">Web</Link>
+                        <Link to="/projects/mobile">Mobile</Link>
+                        <Link to="/projects/academic">Academice</Link>
+                        <Link to="/projects/fun">Creative / Fun</Link>
+                    </div>
+                </div>
+
                 <Link className={location.pathname === '/cv1' ? 'active' : ''} to="/cv1">
                     {t('cv1')}
                 </Link>
