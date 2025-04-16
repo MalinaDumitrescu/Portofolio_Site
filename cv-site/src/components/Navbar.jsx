@@ -11,9 +11,15 @@ function Navbar() {
         localStorage.getItem('language') || 'ro'
     );
 
-    const [darkMode, setDarkMode] = useState(() =>
-        localStorage.getItem('theme') === 'dark'
-    );
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') return true;
+        if (savedTheme === 'light') return false;
+
+        const currentHour = new Date().getHours();
+        return currentHour >= 19 || currentHour < 7; // dark între 19:00–06:59
+    });
+
 
     useEffect(() => {
         document.body.classList.toggle('dark-mode', darkMode);

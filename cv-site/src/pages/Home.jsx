@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import avatar from '../assets/avatar.jpg';
 import '../styles/Home.css';
 
+import StatusBadge from '../components/StatusBadge';
+
+import Timeline from '../components/Timeline';
+
+
 import { Code, Atom, Server, Paintbrush } from 'lucide-react';
 
 import { useTranslation } from 'react-i18next';
@@ -35,6 +40,8 @@ function Home() {
             <p className="about-text" data-aos="fade-up">
                 {t('aboutMe')}
             </p>
+
+            <Timeline />
 
             <section className="skills-section">
                 <h2>{t('skillSection')}</h2>
@@ -80,13 +87,13 @@ function Home() {
                 </div>
             </section>
 
-
-
-
             <div className="button-group">
                 <Link to="/cv1" className="cv-button">{t('cv1')}</Link>
                 <Link to="/cv2" className="cv-button">{t('cv2')}</Link>
             </div>
+
+            <StatusBadge />
+
         </div>
 
     );

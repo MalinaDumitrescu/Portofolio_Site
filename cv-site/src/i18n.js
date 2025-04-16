@@ -36,8 +36,22 @@ const resources = {
             skillReact: "React",
             skillJS: "JavaScript",
             skillNode: "Node.js",
-            skillCSS: "CSS / Sass"
+            skillCSS: "CSS / Sass",
+
+            timeline: "Timeline Profesional",
+            t1_title: "Licență în Informatică",
+            t1_desc: "Universitatea X - Media 9.80",
+            t2_title: "Internship Frontend Developer",
+            t2_desc: "Compania Y - React, Figma, Git",
+            t3_title: "Proiect Freelance",
+            t3_desc: "Web app pentru gestionare evenimente",
+            t4_title: "În căutare de internship",
+            t4_desc: "Deschisă oportunităților din domeniul tech",
+
+            status: "Disponibilă pentru colaborări"
+
         }
+
     },
     en: {
         translation: {
@@ -72,7 +86,20 @@ const resources = {
             skillReact: "React",
             skillJS: "JavaScript",
             skillNode: "Node.js",
-            skillCSS: "CSS / Sass"
+            skillCSS: "CSS / Sass",
+
+            timeline: "Professional Timeline",
+            t1_title: "BSc in Computer Science",
+            t1_desc: "University X - GPA 9.80",
+            t2_title: "Frontend Developer Internship",
+            t2_desc: "Company Y - React, Figma, Git",
+            t3_title: "Freelance Project",
+            t3_desc: "Web app for event management",
+            t4_title: "Looking for internship",
+            t4_desc: "Open to tech opportunities",
+
+            status: "Open to work"
+
         }
     },
     de: {
@@ -108,7 +135,20 @@ const resources = {
             skillReact: "React",
             skillJS: "JavaScript",
             skillNode: "Node.js",
-            skillCSS: "CSS / Sass"
+            skillCSS: "CSS / Sass",
+
+            timeline: "Beruflicher Werdegang",
+            t1_title: "Bachelor in Informatik",
+            t1_desc: "Universität X - Note 9.80",
+            t2_title: "Frontend Praktikum",
+            t2_desc: "Firma Y - React, Figma, Git",
+            t3_title: "Freelance Projekt",
+            t3_desc: "Web-App zur Veranstaltungsverwaltung",
+            t4_title: "Suche nach Praktikum",
+            t4_desc: "Offen für Tech-Chancen",
+
+            status: "Offen für Zusammenarbeit"
+
         }
     }
 };
