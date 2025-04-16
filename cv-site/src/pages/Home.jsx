@@ -16,7 +16,7 @@ function Home() {
             <h1>Bine ai venit!</h1>
             <p>Aici poți vizualiza CV-ul meu profesional și creativ.</p>
 
-            <img src={avatar} alt="Profil" className="avatar" />
+            <img src={avatar} alt="Profil" className="avatar" data-aos="fade-down" />
 
             <h1>
                 <Typewriter
@@ -32,12 +32,14 @@ function Home() {
 
             <p>{t('intro')}</p>
 
-            <p className="about-text">{t('aboutMe')}</p>
+            <p className="about-text" data-aos="fade-up">
+                {t('aboutMe')}
+            </p>
 
             <section className="skills-section">
                 <h2>{t('skillSection')}</h2>
 
-                <div className="skill">
+                <div className="skill" data-aos="zoom-in" data-aos-delay="100">
                     <div className="label">
                         <Atom size={20} />
                         <span>{t('skillReact')}</span>

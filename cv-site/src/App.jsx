@@ -9,6 +9,8 @@ import CV2 from './pages/CV2';
 
 import './styles/App.css';
 
+import BackToTop from './components/BackToTop';
+
 function App() {
     return (
         <Router>
@@ -22,6 +24,7 @@ function App() {
                     </Routes>
                 </main>
                 <Footer />
+                <BackToTop />
             </div>
         </Router>
     );
