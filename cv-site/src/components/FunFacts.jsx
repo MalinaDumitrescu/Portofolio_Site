@@ -1,23 +1,38 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useRef } from 'react';
 import '../styles/FunFacts.css';
 
-function FunFacts() {
-    const { t } = useTranslation();
+import macarons from '../assets/funfacts/macarons.jpg';
+import jazzVideo from '../assets/funfacts/jazz.mp4';
+import alps from '../assets/funfacts/alps.jpg';
 
-    const facts = [
-        t('fact1'),
-        t('fact2'),
-        t('fact3')
+function FunFacts() {
+    const videoRef = useRef(null);
+
+    const mediaItems = [
+        { type: 'image', src: macarons, alt: 'Macarons' },
+        { type: 'image', src: alps, alt: 'Alps' },       // acum poza cu Alpii e pe poziția 2
+        { type: 'video', src: jazzVideo, alt: 'Jazz Video' }  // iar videoclipul trece jos
     ];
 
     return (
         <section className="fun-facts" data-aos="fade-up">
-            <h2>{t('funFacts')}</h2>
-            <div className="facts-container">
-                {facts.map((fact, index) => (
-                    <div className="fact-card" key={index} data-aos="zoom-in" data-aos-delay={index * 100}>
-                        <p>{fact}</p>
+            <div className="funfacts-images-only">
+                {mediaItems.map((item, i) => (
+                    <div className="image-card" key={i}>
+                        {item.type === 'image' ? (
+                            <img src={item.src} alt={item.alt} />
+                        ) : (
+                            <video
+                                ref={videoRef}
+                                src={item.src}
+                                muted
+                                loop
+                                playsInline
+                                className="video-content"
+                                onMouseEnter={() => videoRef.current && videoRef.current.play()}
+                                onMouseLeave={() => videoRef.current && videoRef.current.pause()}
+                            />
+                        )}
                     </div>
                 ))}
             </div>
