@@ -48,7 +48,12 @@ const resources = {
             t4_title: "În căutare de internship",
             t4_desc: "Deschisă oportunităților din domeniul tech",
 
-            status: "Disponibilă pentru colaborări"
+            status: "Disponibilă pentru colaborări",
+
+            funFacts: "Lucruri amuzante despre mine",
+            fact1: "Am făcut peste 100 de macarons.",
+            fact2: "Îmi place să codez ascultând jazz.",
+            fact3: "Visez să lucrez remote din Alpi."
 
         }
 
@@ -98,7 +103,12 @@ const resources = {
             t4_title: "Looking for internship",
             t4_desc: "Open to tech opportunities",
 
-            status: "Open to work"
+            status: "Open to work",
+
+            funFacts: "Lucruri amuzante despre mine",
+            fact1: "Am făcut peste 100 de macarons.",
+            fact2: "Îmi place să codez ascultând jazz.",
+            fact3: "Visez să lucrez remote din Alpi."
 
         }
     },
@@ -147,7 +157,12 @@ const resources = {
             t4_title: "Suche nach Praktikum",
             t4_desc: "Offen für Tech-Chancen",
 
-            status: "Offen für Zusammenarbeit"
+            status: "Offen für Zusammenarbeit",
+
+            funFacts: "Witzige Fakten über mich",
+            fact1: "Ich habe über 100 Macarons gebacken.",
+            fact2: "Ich liebe es, beim Programmieren Jazz zu hören.",
+            fact3: "Mein Traum ist es, remote aus den Alpen zu arbeiten."
 
         }
     }

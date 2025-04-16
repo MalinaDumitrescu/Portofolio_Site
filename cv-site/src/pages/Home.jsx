@@ -7,6 +7,7 @@ import StatusBadge from '../components/StatusBadge';
 
 import Timeline from '../components/Timeline';
 
+import FunFacts from '../components/FunFacts';
 
 import { Code, Atom, Server, Paintbrush } from 'lucide-react';
 
@@ -42,6 +43,8 @@ function Home() {
             </p>
 
             <Timeline />
+
+            <FunFacts />
 
             <section className="skills-section">
                 <h2>{t('skillSection')}</h2>
