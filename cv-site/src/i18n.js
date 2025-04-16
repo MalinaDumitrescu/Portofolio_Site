@@ -55,9 +55,14 @@ const resources = {
             fact2: "Îmi place să codez ascultând jazz.",
             fact3: "Visez să lucrez remote din Alpi.",
 
-            message_title: "Lasă-mi un mesaj",
-            placeholder: "Scrie aici gândurile tale...",
-            message_button: "Trimite 💌",
+            leaveMessage: "Lasă-mi un mesaj",
+            writeMessage: "Scrie aici gândurile tale...",
+            send: "Trimite",
+            sending: "Se trimite",
+            sent: "Trimis",
+
+            message_sent: "Mesaj trimis cu succes!",
+
 
 
         }
@@ -115,9 +120,14 @@ const resources = {
             fact2: "Îmi place să codez ascultând jazz.",
             fact3: "Visez să lucrez remote din Alpi.",
 
-            message_title: "Leave me a message",
-            placeholder: "Write your thoughts here...",
-            message_button: "Send 💌",
+            leaveMessage: "Leave me a message",
+            writeMessage: "Write your thoughts here...",
+            send: "Send",
+            sending: "Sending",
+            sent: "Sent",
+
+            message_sent: "Message sent successfully!",
+
 
 
 
@@ -176,9 +186,14 @@ const resources = {
             fact2: "Ich liebe es, beim Programmieren Jazz zu hören.",
             fact3: "Mein Traum ist es, remote aus den Alpen zu arbeiten.",
 
-            message_title: "Hinterlasse mir eine Nachricht",
-            placeholder: "Schreibe hier deine Gedanken...",
-            message_button: "Senden 💌",
+            leaveMessage: "Hinterlasse mir eine Nachricht",
+            writeMessage: "Schreibe hier deine Gedanken...",
+            send: "Senden",
+            sending: "Wird gesendet",
+            sent: "Gesendet",
+
+            message_sent: "Nachricht erfolgreich gesendet!",
+
 
 
         }

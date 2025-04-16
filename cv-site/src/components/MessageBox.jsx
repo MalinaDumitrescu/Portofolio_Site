@@ -6,45 +6,56 @@ import '../styles/MessageBox.css';
 function MessageBox() {
     const { t } = useTranslation();
     const [message, setMessage] = useState('');
-    const [loading, setLoading] = useState(false);
+    const [sending, setSending] = useState(false);
     const [sent, setSent] = useState(false);
 
-    const sendMessage = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
-        setLoading(true);
+        if (!message.trim()) return;
 
-        emailjs.send('service_ntaubki', 'template_nrt6yah', {
-            message,
-        }, 'ZnyBjzBNidCbUlU4c')
+        setSending(true);
+
+        emailjs.send(
+            'service_ntaubki',          // 🟦 Înlocuiește cu Service ID-ul tău
+            'template_nrt6yah',         // 🟨 Înlocuiește cu Template ID-ul tău
+            {
+                name: 'Vizitator',       // Sau poți adăuga un câmp pt nume
+                title: 'Mesaj nou',
+                message: message
+            },
+            'ZnyBjzBNidCbUlU4c'          // 🟧 Înlocuiește cu Public Key-ul din EmailJS
+        )
             .then(() => {
-                setLoading(false);
                 setSent(true);
                 setMessage('');
-                setTimeout(() => setSent(false), 5000);
             })
-            .catch((error) => {
-                console.error('Eroare la trimitere:', error);
-                setLoading(false);
-            });
+            .catch(err => console.error(err))
+            .finally(() => setSending(false));
     };
 
     return (
-        <div className="message-container" data-aos="fade-up">
-            <h2>📬 {t('contactMe')}</h2>
-            <form onSubmit={sendMessage}>
-                <textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder={t('placeholder')}
-                    rows="6"
-                />
-                <button type="submit" disabled={loading || !message}>
-                    {loading ? 'Trimitere...' : t('send')} 💌
+        <section className="message-box" data-aos="fade-up">
+            <h2>📬 {t('leaveMessage')}</h2>
+
+            <form onSubmit={sendEmail}>
+    <textarea
+        placeholder={t('writeMessage')}
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+    />
+
+                <button type="submit" disabled={sending || sent}>
+                    {sending ? t('sending') + '...' : sent ? t('sent') : t('send') + ' 💌'}
                 </button>
+
+                {sent && (
+                    <div className="success-message">
+                        <span>🎉</span> {t('message_sent')}
+                    </div>
+                )}
             </form>
 
-            {sent && <div className="thank-you-emoji">🎉 Mulțumesc! Mesajul a fost trimis!</div>}
-        </div>
+        </section>
     );
 }
 

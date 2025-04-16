@@ -1,41 +1,96 @@
-.message-container {
+.message-box {
     max-width: 700px;
-    margin: 50px auto;
+    margin: 60px auto;
+    padding: 0 20px;
     text-align: center;
 }
 
-textarea {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 12px;
-    font-size: 1rem;
-    resize: vertical;
+.message-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
-button {
-    margin-top: 1rem;
-    padding: 0.8rem 2rem;
-    background-color: #007bff;
+.message-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message-box textarea {
+    resize: vertical;
+    min-height: 160px;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 2px #0080ff;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.message-box textarea:focus {
+    box-shadow: 0 0 0 3px #0055cc;
+}
+
+.message-box button {
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 30px;
+    background: #0080ff;
     color: white;
     font-weight: bold;
-    border: none;
-    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.message-box button:disabled {
+    background: gray;
+    cursor: not-allowed;
 }
 
-.thank-you-emoji {
+.success-message {
     margin-top: 20px;
-    font-size: 1.5rem;
-    animation: bounceIn 0.8s ease forwards;
+    font-size: 1.3rem;
+    color: #4BB543;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    animation: fadeInOut 3s ease-in-out forwards;
 }
 
-@keyframes bounceIn {
-    0% { transform: scale(0.7); opacity: 0; }
-    80% { transform: scale(1.05); }
-    100% { transform: scale(1); opacity: 1; }
+.success-message span {
+    animation: bounce 1s infinite;
+}
+
+/* Fade in + out */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Emoji bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
