@@ -165,3 +165,59 @@ h1 {
     margin: 0 auto 30px;
     max-width: 800px;
 }
+
+
+
+
+
+
+
+.recruiter-box {
+    background: linear-gradient(135deg, #ffe0f0, #e0f7fa);
+    padding: 30px;
+    margin: 50px auto 0;
+    border-radius: 16px;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: floatIn 0.8s ease forwards;
+}
+
+.recruiter-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.recruiter-box p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.recruiter-button {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.recruiter-button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+/* Animație subtilă */
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

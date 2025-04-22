@@ -76,8 +76,9 @@ const resources = {
             fun: "Creative / Fun",
 
 
-
-
+            recruiter_title: "💌 Mesaj dedicat recrutorilor",
+            recruiter_text: "Am pregătit un scurt mesaj care sper să vă aducă un zâmbet.",
+            recruiter_button: "Deschide pentru un zâmbet"
 
 
         }
@@ -157,6 +158,10 @@ const resources = {
 
 
 
+            recruiter_title: "💌 A note for recruiters",
+            recruiter_text: "I've prepared a short message that I hope will make you smile.",
+            recruiter_button: "Open for a smile"
+
 
 
 
@@ -233,6 +238,13 @@ const resources = {
             mobile: "Mobile Apps",
             academic: "Akademisch",
             fun: "Kreativ / Spaß",
+
+
+
+            recruiter_title: "💌 Eine Nachricht für Recruiter",
+            recruiter_text: "Ich habe eine kleine Botschaft vorbereitet – vielleicht zaubert sie Ihnen ein Lächeln ins Gesicht.",
+            recruiter_button: "Öffnen für ein Lächeln"
+
 
 
 

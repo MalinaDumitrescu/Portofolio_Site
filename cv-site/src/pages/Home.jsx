@@ -82,7 +82,23 @@ function Home() {
 
             {/* ▶️ Badge + Message */}
             <StatusBadge />
+
+            {/* ▶️ recruiter site + Message */}
+            <section className="recruiter-box" data-aos="zoom-in">
+                <h3>{t('recruiter_title')}</h3>
+                <p>{t('recruiter_text')}</p>
+                <a
+                    href="https://malinadumitrescu.github.io/NiceDayForRecruiters/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="recruiter-button"
+                >
+                    {t('recruiter_button')} 🌈
+                </a>
+            </section>
+
             <MessageBox />
+
         </div>
     );
 }
