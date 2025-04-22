@@ -25,7 +25,7 @@ function CV2() {
 
             <div className="cv1-profile-header">
                 <img
-                    src={avatar}  // asigură-te că e pus în public/ sau src/assets și corectează path-ul
+                    src={avatar}
                     alt="Malina Dumitrescu"
                     className="cv1-profile-pic"
                 />
@@ -120,6 +120,24 @@ function CV2() {
                     🏕️ <em>Once a Scout, always a Scout!</em>
                 </p>
 
+                <section className="cv2-section" data-aos="fade-up">
+                    <div className="cv2-gallery-container">
+                        <div className="cv2-gallery-center">
+                            <img src="src/assets/wosm.jpg" className="cv2-gallery-center-logo" alt="Gutenberg Logo" />
+                        </div>
+
+                        <div className="cv2-gallery-orbit">
+                            <img src="src/assets/rov.jpg" className="cv2-orbit-image orbit1" alt="Event 1" />
+                            <img src="src/assets/nocrich.jpg" className="cv2-orbit-image orbit2" alt="Event 2" />
+                            <img src="src/assets/ocg.jpg" className="cv2-orbit-image orbit3" alt="Workshop" />
+                            <img src="src/assets/gulgute.jpg" className="cv2-orbit-image orbit4" alt="Filmabend" />
+                            <img src="src/assets/fl22.jpg" className="cv2-orbit-image orbit5" alt="Outdoor" />
+                            <img src="src/assets/ffl.jpg" className="cv2-orbit-image orbit6" alt="Craiova Logo" />
+
+                        </div>
+                    </div>
+                </section>
+
                 {/* ROLES & PROJECTS */}
                 <section className="cv2-section" data-aos="fade-up">
                     <h2>🌱 Scouting Roles & Projects</h2>
@@ -150,6 +168,27 @@ function CV2() {
                         As branch president (of course, not alone, but with a wonderful team), I navigated the challenges of post-pandemic organizing and restrictions — rebuilding community spirit, launching cultural and educational events, and staying rooted in German values, leadership, and collaboration. This experience taught me how to empower others, make thoughtful decisions, and remain resilient through uncertainty.
                     </p>
                 </section>
+
+                <section className="cv2-section" data-aos="fade-up">
+                    <h3 className="cv2-gallery-title">📸 Snapshots from my Gutenberg Journey</h3>
+                    <div className="cv2-gallery-container">
+                        <div className="cv2-gallery-center">
+                            <img src="src/assets/gverein.jpg" className="cv2-gallery-center-logo" alt="Gutenberg Logo" />
+                        </div>
+
+                        <div className="cv2-gallery-orbit">
+                            <img src="src/assets/gtog.jpg" className="cv2-orbit-image orbit1" alt="Event 1" />
+                            <img src="src/assets/gultim.jpg" className="cv2-orbit-image orbit2" alt="Event 2" />
+                            <img src="src/assets/gws.jpg" className="cv2-orbit-image orbit3" alt="Workshop" />
+                            <img src="src/assets/gfilm.jpg" className="cv2-orbit-image orbit4" alt="Filmabend" />
+                            <img src="src/assets/gprima.jpg" className="cv2-orbit-image orbit5" alt="Outdoor" />
+                            <img src="src/assets/gcraiova.jpg" className="cv2-orbit-image orbit6" alt="Craiova Logo" />
+
+                        </div>
+                    </div>
+                </section>
+
+
 
 
                 <section className="cv2-section" data-aos="fade-up">

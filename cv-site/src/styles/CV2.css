@@ -14,11 +14,12 @@
     margin-right: auto;
     background: var(--bg);
     border-radius: 12px;
+    margin-top: 80px;
 }
 
 .cv1-section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 1.6rem;
     display: inline-block;
     padding-bottom: 4px;
@@ -459,3 +460,110 @@ cv2*/
     font-style: italic;
     font-weight: 500;
 }
+
+
+
+
+
+
+.cv2-gallery-section {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+
+.cv2-gallery-title {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: var(--text);
+}
+
+
+
+
+
+
+.cv2-gallery-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    animation: none; /* scoate rotația */
+}
+
+.cv2-gallery-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cv2-gallery-center-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    background-color: white; /* pentru fundal neutru */
+}
+
+.cv2-gallery-orbit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cv2-orbit-image {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /*object-fit: contain;*/ /* schimbat din 'cover' */
+    background-color: white; /* pentru spațiu gol în jurul logo-ului */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cv2-orbit-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.5);
+}
+
+/* Positioning individual orbit images around a circle */
+.orbit1 { top: 5%; left: 50%; transform: translate(-50%, -50%); }
+.orbit2 { top: 25%; left: 90%; transform: translate(-50%, -50%); }
+.orbit3 { top: 75%; left: 90%; transform: translate(-50%, -50%); }
+.orbit4 { bottom: 5%; left: 50%; transform: translate(-50%, 50%); }
+.orbit5 { top: 75%; left: 10%; transform: translate(-50%, -50%); }
+.orbit6 { top: 25%; left: 10%; transform: translate(-50%, -50%); }
+
+
+.cv2-gallery-title {
+    font-size: 1.4rem;
+    color: var(--text);
+    text-align: center;
+
+    margin-bottom: 50px;  /* ⬅️ Increase this value */
+}
+
+.cv2-gallery-section {
+    margin-bottom: 80px; /* mai mult spațiu între galerie și următorul titlu */
+}
+
+.cv2-section {
+    margin-top: 80px; /* spațiu suplimentar între secțiuni */
+}
+
+.cv2-section h2 {
+    margin-bottom: 30px; /* spațiu sub titlu */
+}
+
+.scout-gallery .cv2-orbit-image {
+    object-fit: cover;
+    background-color: transparent; /* elimină cercul alb */
+}
+
