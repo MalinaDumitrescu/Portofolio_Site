@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/CV1.css';
+import '../styles/CV2.css';
 import avatar from '../assets/avatar.jpg';
-import { useTranslation } from 'react-i18next';
-import { Download } from 'lucide-react';
+import {useTranslation} from 'react-i18next';
+import {Download} from 'lucide-react';
 
-function CV1() {
-    const { t } = useTranslation();
+function CV2() {
+    const {t} = useTranslation();
 
     return (
         <main className="cv1-container">
@@ -45,8 +45,10 @@ function CV1() {
                             <li>📧 malina.dumitrescu24@gmail.com</li>
                             <li>📞 +40 771 545 730</li>
                             <li>📍 Cluj-Napoca</li>
-                            <li>💻 <a href="https://github.com/MalinaDumitrescu" target="_blank" rel="noreferrer">GitHub</a></li>
-                            <li>🔗 <a href="https://linkedin.com/in/mălina-dumitrescu217a36287" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                            <li>💻 <a href="https://github.com/MalinaDumitrescu" target="_blank"
+                                     rel="noreferrer">GitHub</a></li>
+                            <li>🔗 <a href="https://linkedin.com/in/mălina-dumitrescu217a36287" target="_blank"
+                                     rel="noreferrer">LinkedIn</a></li>
                         </ul>
                     </div>
 
@@ -86,12 +88,12 @@ function CV1() {
                     <li>
 
                         <strong>Babeș-Bolyai University
-                        </strong> – Faculty of Mathematics and Computer Science<br />
+                        </strong> – Faculty of Mathematics and Computer Science<br/>
                         <em>2023 - 2026 • Computer Science, German- language program</em>
                     </li>
 
                     <li>
-                        <strong>Highschool </strong> – National College ”Elena Cuza”, Craiova<br />
+                        <strong>Highschool </strong> – National College ”Elena Cuza”, Craiova<br/>
                         <em>2019 – 2023 • Natural Sciences-German Bilingual Class</em>
                     </li>
                 </ul>
@@ -100,56 +102,96 @@ function CV1() {
 
             {/* EXPERIENȚĂ */}
             <section className="cv1-section" data-aos="fade-up">
-                <h2>🧑‍💻 Experience </h2>
-                <ul className="cv1-list">
-                    <li>
-                        <strong>Univeristy Networks Intership</strong> – Department of Information Technology and Communication<br />
-                        <em>April - June 2024 </em><br /><br />
+                <h2>🧑‍💻 Volunteer & Leadership Experience </h2>
 
-                        During my 3-month internship at the Department of Information
-                        Technology and Communication (DTIC) at UBB, I worked with
-                        both hardware and software components in networking. Driven
-                        by curiosity and interest in this field, I gained hands-on
-                        experience in network setup, troubleshooting, and
-                        infrastructure management, expanding my understanding of IT
-                        systems beyond software development.
-                    </li>
-                </ul>
 
-                <ul className="cv1-list">
-                    <li>
-                        <strong>Volunteer</strong> – National Organization of Scouts<br />
-                        <em>2019 - present </em><br /><br />
+                <p className="cv2-story">
+                    I began my journey in the National Organization of Romanian Scouts in 2019. Over the years, I
+                    evolved from a passionate participant into a proactive coordinator, driven by values such as
+                    solidarity, community, and adventure.
+                    <br/><br/>
+                    My involvement in scouting taught me how to organize large events, communicate clearly within
+                    multicultural teams, and take initiative while also supporting others. From tent pitching to
+                    fundraising, from logistics to public speaking, scouting has shaped my resilience, leadership, and
+                    love for service.
+                </p>
 
-                        - Member of the Romanian Contingent Management
-                        - Team for Roverway 2024, Norway (international event)
-                        - Nocrich International Scout Center- volunteer
-                        - Project coordinator, leading roles in Human Resources
-                        (HR), Logistics, Image and Communication (PR),
-                        Program Planning and Team Management in various
-                        projects.
-                    </li>
-                </ul>
+                <p className="cv2-scout-quote" data-aos="fade-in">
+                    🏕️ <em>Once a Scout, always a Scout!</em>
+                </p>
 
-                <ul className="cv1-list">
-                    <li>
-                        <strong>Volunteer</strong> – Gutenberg Studentenverein<br />
-                        <em>2021 - 2023 </em><br /><br />
-                        - President of Gutenberg Jugendverein, Dolj branchlearning how to manage an organization based on
-                        German language and German work ethics.
-                        -- leadership, teamwork, solving conflicts, critical
-                        thinking, meeting deadlines, organizational skills.
-                    </li>
+                {/* ROLES & PROJECTS */}
+                <section className="cv2-section" data-aos="fade-up">
+                    <h2>🌱 Scouting Roles & Projects</h2>
+                    <ul className="cv2-list highlight">
+                        <li><strong> Member of the Romanian Contingent Management Team</strong> – Roverway 2024, Norway
+                            (International Event)
+                        </li>
+                        <li><strong>Volunteer</strong> – Nocrich International Scout Center (2021-2023)</li>
+                        <li><strong>Project Coordinator</strong> – HR, Logistics, PR & Program Management on diverse
+                            smaller projects(2019-present)
+                        </li>
+                        <li><strong>Organizer</strong> – Festival of Light - 2022 & 2023 Editions</li>
+                        <li><strong>Organizer</strong> – Order of the Enchanted Gift - Fundraising (2022)</li>
+                        <li><strong>Organizer</strong> – National Scout Camp "Festivalul de Festivalul Luminii" (2023)
+                        </li>
+
+                    </ul>
+                </section>
+
+                {/* Gutenberg Involvement */}
+                <section className="cv2-section" data-aos="fade-up">
+                    <h2>📚 Gutenberg Experience</h2>
+                    <p className="cv2-story">
+                        My journey with the Gutenberg Jugendverein began in 2021, after participating in an inspiring online summer camp organized by the association. Shortly after, I was contacted by the former president of the Dolj branch — a student in Cluj and an active member of the Studentenverein — who asked me if I would be open to reviving the local branch.
+                        <br /><br />
+                        She forwarded me the official email invitation from the board, and less than a day later, we had built a motivated local team and created our new board. What followed was an intense and fulfilling period of re-establishing the Dolj branch.
+                        <br /><br />
+                        As branch president (of course, not alone, but with a wonderful team), I navigated the challenges of post-pandemic organizing and restrictions — rebuilding community spirit, launching cultural and educational events, and staying rooted in German values, leadership, and collaboration. This experience taught me how to empower others, make thoughtful decisions, and remain resilient through uncertainty.
+                    </p>
+                </section>
+
+
+                <section className="cv2-section" data-aos="fade-up">
+                    <h2>🎓 Roles & Skills – Gutenberg</h2>
+                    <ul className="cv2-list highlight">
+                        <li><strong>President of Dolj Branch</strong> – Gutenberg Jugendverein (2021–2022)</li>
+                        <li><strong>Volunteer</strong> – Gutenberg Jugendverein (2021–2023)</li>
+                        <li>Led team meetings and managed cross-functional projects</li>
+                        <li>Applied German work ethic principles: structure, discipline, initiative</li>
+                        <li>Oversaw the creation of project reports, feedback forms, and planning documentation</li>
+                        <li>Strengthened skills in leadership, teamwork, conflict resolution, and strategic planning</li>
+                    </ul>
+                </section>
+
+            </section>
+
+            {/* ALTE EXPERIENȚE / MENȚIUNI */}
+            <section className="cv2-section" data-aos="fade-up">
+                <h2>🌟 Other Notable Experiences & Achievements</h2>
+                <ul className="cv2-list">
+                    <li><strong>German Language Competitions</strong> – National & Regional Results</li>
+                    <li><strong>Mathematics Competitions</strong> – Regional Distinctions</li>
+                    <li><strong>JCI (Junior Chamber International)</strong> – Volunteer</li>
+                    <li><strong>European Solidarity Corps</strong> – Project Participant</li>
+                    <li><strong>Red Cross</strong> – Active Volunteer</li>
+                    <li><strong>Simbio</strong> – Community Volunteer</li>
+                    <li><strong>Eco-Fest International Festival</strong> – Jury Member (Ecology Film Edition)</li>
+                    <li><strong>German Certification Thesis</strong> – Topic: "Pfadfindertum" (Scouting)</li>
+                    <li><strong>Literary Publication</strong> – Contributor in *Irizări* Magazine</li>
+                    <li><strong>DiscoverEU</strong> – Certificate of Participation</li>
+
                 </ul>
             </section>
+
 
             {/* CERTIFICĂRI */}
             <section className="cv1-section" data-aos="fade-up">
                 <h2>📜 Certifications </h2>
-                <ul className="cv1-list">
+                <ul className="cv2-list achievements">
                     <li>
-                        <strong>German Language Certification – Deutsches Sprachdiplom Stufe II (C1)</strong><br />
-                        Kultusministerkonferenz (KMK) • 2023<br />
+                        <strong>German Language Certification – Deutsches Sprachdiplom Stufe II (C1)</strong><br/>
+                        Kultusministerkonferenz (KMK) • 2023<br/>
                         <a
                             href="/Deutsches_Sprachdiplom_Stufe_II_Mălina-Teodora Dumitrescu.pdf"
                             target="_blank"
@@ -163,10 +205,15 @@ function CV1() {
                 </ul>
             </section>
 
-
-
-
-
+            <section className="cv2-section" data-aos="fade-up">
+                <h2>🌟 Personal Motto</h2>
+                <p className="cv2-motto">
+                    <em>"You can be stupid, as long as you're lucky."</em><br/>
+                    <span style={{fontSize: '0.95rem', color: '#666'}}>
+      And because I truly live by this, I’ll leave the original too: <strong>„Prost să fii, noroc să ai :') ”</strong>
+    </span>
+                </p>
+            </section>
 
 
             {/* PDF */}
@@ -187,4 +234,4 @@ function CV1() {
     );
 }
 
-export default CV1;
+export default CV2;

@@ -371,3 +371,91 @@
     75% { transform: rotate(10deg); }
     100% { transform: rotate(0deg); }
 }
+
+
+
+
+/*
+cv2*/
+
+.cv2-list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cv2-list li {
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: rgba(0, 123, 255, 0.05);
+    border-left: 4px solid #007bff;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.cv2-list.achievements li {
+    background-color: rgba(255, 215, 0, 0.07); /* un galben subtil */
+    border-left-color: #ffc107;
+}
+
+
+
+
+
+
+
+.cv2-story {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: justify;
+    color: var(--text);
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 10px 0 30px;
+    font-style: italic;
+}
+
+/* Opțional, pentru un accent diferit al secțiunii Roles & Projects */
+.cv2-list.highlight li {
+    background-color: rgba(0, 123, 255, 0.04);
+    border-left: 4px solid #3399ff;
+}
+
+
+.cv2-scout-quote {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+.cv2-values {
+    list-style: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--text);
+}
+
+.cv2-motto {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #007bff;
+    font-style: italic;
+    font-weight: 500;
+}
