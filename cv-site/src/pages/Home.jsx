@@ -50,46 +50,29 @@ function Home() {
             <section className="skills-section">
                 <h2>{t('skillSection')}</h2>
 
-                <div className="skill" data-aos="zoom-in" data-aos-delay="100">
-                    <div className="label">
-                        <Atom size={20} />
-                        <span>{t('skillReact')}</span>
+                {[
+                    { label: 'Soft Skills & Agile', percent: 95 },
+                    { label: 'Programming & OOP', percent: 80 },
+                    { label: 'Software Dev & Management', percent: 80 },
+                    { label: 'Testing & Debugging', percent: 75 },
+                    { label: 'Databases & SQL', percent: 80 },
+                    { label: 'OS & SysAdmin', percent: 70 },
+                    { label: 'Web Development', percent: 50 },
+                    { label: 'Networking & Security', percent: 65 },
+                    { label: 'DevOps & Tools', percent: 60 },
+                    { label: 'Scientific Computing & AI', percent: 50 },
+                ].map((skill, index) => (
+                    <div className="skill" data-aos="fade-up" data-aos-delay={index * 100} key={skill.label}>
+                        <div className="label">
+                            <span>{skill.label}</span>
+                        </div>
+                        <div className="bar">
+                            <div className="fill" style={{ width: `${skill.percent}%` }}></div>
+                        </div>
                     </div>
-                    <div className="bar">
-                        <div className="fill" style={{ width: '90%' }}></div>
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <div className="label">
-                        <Code size={20} />
-                        <span>{t('skillJS')}</span>
-                    </div>
-                    <div className="bar">
-                        <div className="fill" style={{ width: '80%' }}></div>
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <div className="label">
-                        <Server size={20} />
-                        <span>{t('skillNode')}</span>
-                    </div>
-                    <div className="bar">
-                        <div className="fill" style={{ width: '75%' }}></div>
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <div className="label">
-                        <Paintbrush size={20} />
-                        <span>{t('skillCSS')}</span>
-                    </div>
-                    <div className="bar">
-                        <div className="fill" style={{ width: '70%' }}></div>
-                    </div>
-                </div>
+                ))}
             </section>
+
 
             {/* ▶️ CV Buttons */}
             <div className="button-group">
