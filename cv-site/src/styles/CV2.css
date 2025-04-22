@@ -1,0 +1,373 @@
+.cv1-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    color: var(--text);
+    text-align: center; /* centru general */
+}
+
+.cv1-section {
+    margin-bottom: 60px;
+    padding: 0 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--bg);
+    border-radius: 12px;
+}
+
+.cv1-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding-bottom: 4px;
+    color: var(--text);
+    border-bottom: none; /* Elimina sublinierea */
+}
+
+.cv1-intro, .cv1-section p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+
+.cv1-list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.6;
+    text-align: left; /* lăsăm listarea structurată pe stânga */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cv1-list li {
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: rgba(0, 123, 255, 0.05);
+    border-left: 4px solid #007bff;
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+/* SKILLURI CU BARE */
+.cv1-skills-bars {
+    margin-top: 30px;
+}
+
+.cv1-skill {
+    margin-bottom: 20px;
+}
+
+.cv1-skill-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.cv1-skill-bar {
+    background-color: #ddd;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cv1-skill-fill {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.8s ease;
+}
+
+/* CATEGORII DE TEHNOLOGII */
+.cv1-skills-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.cv1-skill-col {
+    flex: 1 1 400px;
+    max-width: 480px;
+}
+
+.cv1-skill-col h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--text);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-top: 25px;
+}
+
+.cv1-skill-col ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.cv1-skill-col li {
+    padding: 4px 0;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.cv1-skills-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    color: var(--text);
+}
+
+/* PDF */
+.cv1-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cv1-download:hover {
+    background-color: #0056b3;
+}
+
+.cv1-pdf-preview {
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.cv1-download-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgba(0, 123, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.cv1-download-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cv1-pdf-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.cv1-subtext {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-top: 4px;
+}
+
+.cv1-download-button {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.cv1-download-button:hover {
+    background-color: #0056b3;
+}
+
+
+.cv1-note-lang {
+    font-size: 0.95rem;
+    color: #888;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+
+
+.cv1-cert-link {
+    font-size: 0.95rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cv1-cert-link:hover {
+    text-decoration: underline;
+}
+
+
+.cv1-projects-text {
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.cv1-projects-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cv1-projects-text a:hover {
+    text-decoration: underline;
+}
+
+
+.cv1-projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px auto 20px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.cv1-projects-list li {
+    margin: 10px 0;
+}
+
+.cv1-projects-list a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.cv1-projects-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.cv1-contact-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cv1-contact-info, .cv1-skill-block {
+    flex: 1 1 300px;
+}
+
+.cv1-contact-info ul,
+.cv1-skill-block ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+}
+
+.cv1-contact-info a,
+.cv1-skill-block a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cv1-contact-info a:hover,
+.cv1-skill-block a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cv1-profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.cv1-profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.cv1-profile-pic:hover {
+    transform: scale(1.08);
+}
+
+.cv1-profile-name h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 1s ease;
+}
+
+.cv1-profile-name h2::before {
+    content: "👋";
+    animation: wave 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}

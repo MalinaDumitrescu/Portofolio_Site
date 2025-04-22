@@ -78,8 +78,10 @@ const resources = {
 
             recruiter_title: "💌 Mesaj dedicat recrutorilor",
             recruiter_text: "Am pregătit un scurt mesaj care sper să vă aducă un zâmbet.",
-            recruiter_button: "Deschide pentru un zâmbet"
+            recruiter_button: "Deschide pentru un zâmbet",
 
+
+            cv1_note_lang: "⚠️ Momentan, această pagină este disponibilă doar în limba engleză.",
 
         }
 
@@ -160,8 +162,10 @@ const resources = {
 
             recruiter_title: "💌 A note for recruiters",
             recruiter_text: "I've prepared a short message that I hope will make you smile.",
-            recruiter_button: "Open for a smile"
+            recruiter_button: "Open for a smile",
 
+
+            cv1_note_lang: "⚠️ This page is currently available in English only.",
 
 
 
@@ -243,9 +247,11 @@ const resources = {
 
             recruiter_title: "💌 Eine Nachricht für Recruiter",
             recruiter_text: "Ich habe eine kleine Botschaft vorbereitet – vielleicht zaubert sie Ihnen ein Lächeln ins Gesicht.",
-            recruiter_button: "Öffnen für ein Lächeln"
+            recruiter_button: "Öffnen für ein Lächeln",
 
 
+
+            cv1_note_lang: "⚠️ Diese Seite ist derzeit nur auf Englisch verfügbar.",
 
 
 
