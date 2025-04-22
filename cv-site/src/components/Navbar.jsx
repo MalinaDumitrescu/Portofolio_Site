@@ -51,10 +51,8 @@ function Navbar() {
                         {t('projects')} ▾
                     </button>
                     <div className="dropdown-content">
-                        <Link to="/projects/web">Web</Link>
-                        <Link to="/projects/mobile">Mobile</Link>
-                        <Link to="/projects/academic">Academice</Link>
-                        <Link to="/projects/fun">Creative / Fun</Link>
+                        <Link to="/projects/personal">Personal</Link>
+                        <Link to="/projects/academic">Academic</Link>
                     </div>
                 </div>
 
