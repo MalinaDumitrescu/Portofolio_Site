@@ -4,6 +4,7 @@ import avatar from '../assets/avatar.jpg';
 import { useTranslation } from 'react-i18next';
 import { Download } from 'lucide-react';
 
+
 function CV1() {
     const { t } = useTranslation();
 
@@ -171,10 +172,8 @@ function CV1() {
                 </p>
                 <ul className="cv1-projects-list">
 
-                    <li><a href="/projects/fun">🎨 Creative / Fun Projects</a></li>
                     <li><a href="/projects/academic">🎓 Academic Projects</a></li>
-                    <li><a href="/projects/web">🌐 Web Projects</a></li>
-                    <li><a href="/projects/mobile">📱 Mobile Projects</a></li>
+                    <li><a href="/projects/personal">🎨 Personal Projects</a></li>
                 </ul>
                 <p className="cv1-projects-text">
                     Or browse everything on my
