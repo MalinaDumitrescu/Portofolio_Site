@@ -188,6 +188,16 @@ h1 {
     margin-bottom: 10px;
 }
 
+body.dark-mode .recruiter-box h3,
+body.dark-mode .recruiter-box p {
+    color: #222; /* sau orice culoare închisă pe care o vrei */
+}
+
+body.dark-mode .recruiter-box {
+    background-color: var(--bg); /* folosește tema deja definită */
+}
+
+
 .recruiter-box p {
     font-size: 1.1rem;
     margin-bottom: 20px;

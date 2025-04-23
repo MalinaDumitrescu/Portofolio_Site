@@ -47,7 +47,7 @@ function CV2() {
                             <li>📍 Cluj-Napoca</li>
                             <li>💻 <a href="https://github.com/MalinaDumitrescu" target="_blank"
                                      rel="noreferrer">GitHub</a></li>
-                            <li>🔗 <a href="https://linkedin.com/in/mălina-dumitrescu217a36287" target="_blank"
+                            <li>🔗 <a href="https://www.linkedin.com/in/m%C4%83lina-dumitrescu-217a36287/" target="_blank"
                                      rel="noreferrer">LinkedIn</a></li>
                         </ul>
                     </div>

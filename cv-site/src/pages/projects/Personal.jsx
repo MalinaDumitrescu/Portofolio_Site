@@ -67,7 +67,7 @@ function Personal() {
       </pre>
                 </>
             ),
-            github: "https://github.com/malinadumitrescu/portfolio-site"
+            github: "https://github.com/MalinaDumitrescu/Portofolio_Site"
         },
 
         {
@@ -80,7 +80,7 @@ function Personal() {
                     </p>
                     <h4>🤝 Teamwork Makes the Dream Work</h4>
                     <p>
-                        Developed in collaboration with my teammate <a href="https://www.linkedin.com/in/arthurhoreanu/" target="_blank" rel="noreferrer"><strong>Arthur Horeanu</strong></a>, this project taught us how to work effectively in a real dev team. From Git branching to strategic commits (yes, even “Merry Christmas” messages 🎄), we grew a lot together.
+                        Developed in collaboration with my teammate <a href="https://www.linkedin.com/in/arthur-horeanu-03625a2b7/" target="_blank" rel="noreferrer"><strong>Arthur Horeanu</strong></a>, this project taught us how to work effectively in a real dev team. From Git branching to strategic commits (yes, even “Merry Christmas” messages 🎄), we grew a lot together.
                     </p>
 
                     <h4>💡 Project Evolution – From Idea to Full Stack</h4>
@@ -116,7 +116,7 @@ function Personal() {
                     </p>
                 </>
             ),
-            github: "https://github.com/malinadumitrescu/TicketSalesApp"
+            github: "https://github.com/MalinaDumitrescu/TicketSalesCompany"
         },
 
 
@@ -168,7 +168,7 @@ npm run dev
                     </p>
                 </>
             ),
-            github: "https://github.com/malinadumitrescu/tictactoe-frontend"
+            github: "https://github.com/MalinaDumitrescu/Tic-tac-toe-ai"
         }
         ,
         {
@@ -235,7 +235,7 @@ npm run dev
                     </p>
                 </>
             ),
-            github: "https://github.com/malinadumitrescu/NiceDayForRecruiters"
+            github: "https://github.com/MalinaDumitrescu/NiceDayForRecruiters"
         },
 
         {
@@ -304,7 +304,7 @@ npm run dev
                     </p>
                 </>
             ),
-            github: "https://github.com/malinadumitrescu/vpn-firewall-ai"
+            github: "https://github.com/MalinaDumitrescu/AI-Powered-VPN-Firewall-"
         },
 
     ];
