@@ -172,8 +172,8 @@ function CV1() {
                 </p>
                 <ul className="cv1-projects-list">
 
-                    <li><a href="/projects/academic">🎓 Academic Projects</a></li>
-                    <li><a href="/projects/personal">🎨 Personal Projects</a></li>
+                    <li><a href="/Portofolio_Site/Academic">🎓 Academic Projects</a></li>
+                    <li><a href="/Portofolio_Site/Personal">🎨 Personal Projects</a></li>
                 </ul>
                 <p className="cv1-projects-text">
                     Or browse everything on my
@@ -290,8 +290,8 @@ function CV1() {
                 </div>
 
                 <iframe
-                    src={`${import.meta.env.BASE_URL}cv-malina-dumitrescu.pdf`}
-                    title="CV PDF"
+                    src="https://malinadumitrescu.github.io/Portofolio_Site/"
+                    title="Site Frame"
                     className="cv1-pdf-preview"
                 />
             </section>

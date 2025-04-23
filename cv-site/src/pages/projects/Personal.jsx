@@ -151,7 +151,7 @@ function Personal() {
 
                     <h4>🎥 Demo Video</h4>
                     <video className="project-video" controls>
-                        <source src="/tictactoe-demo.mp4" type="video/mp4" />
+                        <source src="/Portofolio_Site/tictactoe-demo.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
 
