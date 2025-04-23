@@ -11,6 +11,9 @@ import Projects from './pages/Projects';
 import Personal from './pages/projects/Personal.jsx';
 import Academic from './pages/projects/Academic.jsx';
 
+import { Navigate } from 'react-router-dom'
+
+
 
 import './styles/App.css';
 
@@ -29,6 +32,9 @@ function App() {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/projects/personal" element={<Personal />} />
                         <Route path="/projects/academic" element={<Academic />} />
+
+                        <Route path="*" element={<Navigate to="/" replace />} />
+
                     </Routes>
                 </main>
                 <Footer />

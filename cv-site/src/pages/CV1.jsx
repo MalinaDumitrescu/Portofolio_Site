@@ -4,6 +4,8 @@ import avatar from '../assets/avatar.jpg';
 import { useTranslation } from 'react-i18next';
 import { Download } from 'lucide-react';
 
+import { Link } from 'react-router-dom';
+
 
 function CV1() {
     const { t } = useTranslation();
@@ -170,11 +172,16 @@ function CV1() {
                 <p className="cv1-projects-text">
                     You can explore my work across different categories:
                 </p>
-                <ul className="cv1-projects-list">
 
-                    <li><a href="/Portofolio_Site/Academic">🎓 Academic Projects</a></li>
-                    <li><a href="/Portofolio_Site/Personal">🎨 Personal Projects</a></li>
+                <ul className="cv1-projects-list">
+                    <li>
+                        <a href="/Portofolio_Site/projects/academic">🎓 Academic Projects</a>
+                    </li>
+                    <li>
+                        <a href="/Portofolio_Site/projects/personal">🎨 Personal Projects</a>
+                    </li>
                 </ul>
+
                 <p className="cv1-projects-text">
                     Or browse everything on my
                     <a href="https://github.com/malinadumitrescu" target="_blank" rel="noreferrer"> GitHub profile</a>.

@@ -247,9 +247,9 @@ function CV2() {
             <section className="cv2-section" data-aos="fade-up">
                 <h2>🌟 Personal Motto</h2>
                 <p className="cv2-motto">
-                    <em>"You can be stupid, as long as you're lucky."</em><br/>
+                    <em>"I am man, nothing that is human is indifferent to me."</em><br/>
                     <span style={{fontSize: '0.95rem', color: '#666'}}>
-      And because I truly live by this, I’ll leave the original too: <strong>„Prost să fii, noroc să ai :') ”</strong>
+      And because I truly live by this, I’ll leave the original too: <strong>"Homo sum, humani nihil a me alienum puto.”</strong>
     </span>
                 </p>
             </section>
