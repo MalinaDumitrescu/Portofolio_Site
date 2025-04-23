@@ -282,7 +282,7 @@ function CV1() {
 
                     <a
                         className="cv1-download-button"
-                        href="/CV-%20Mălina-Teodora%20Dumitrescu%20(11).pdf"
+                        href="/Portofolio_Site/cv-malina-dumitrescu.pdf"
                         download
                     >
                         <Download size={18} />
@@ -291,7 +291,7 @@ function CV1() {
                 </div>
 
                 <iframe
-                    src={`${import.meta.env.BASE_URL}CV- Mălina-Teodora Dumitrescu (11)(3)u.pdf`}
+                    src={`${import.meta.env.BASE_URL}cv-malina-dumitrescu.pdf`}
                     title="CV PDF"
                     className="cv1-pdf-preview"
                 />

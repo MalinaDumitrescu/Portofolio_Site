@@ -260,7 +260,7 @@ function CV2() {
 
 
                 <iframe
-                    src={`${import.meta.env.BASE_URL}CV- Mălina-Teodora Dumitrescu (11)(3)u.pdf`}
+                    src={`${import.meta.env.BASE_URL}cv-malina-dumitrescu.pdf`}
                     title="CV PDF"
                     className="cv1-pdf-preview"
                 />
