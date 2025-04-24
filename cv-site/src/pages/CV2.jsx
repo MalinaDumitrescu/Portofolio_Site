@@ -11,7 +11,7 @@ function CV2() {
         <main className="cv1-container">
             {/* INTRO */}
             <section className="cv1-section" data-aos="fade-up">
-                <h1>Technical CV</h1>
+                <h1>Personal CV</h1>
                 <p className="cv1-intro">
                     As a second-year Computer Science student, I am always
                     seeking opportunities to expand my knowledge and skill set.
