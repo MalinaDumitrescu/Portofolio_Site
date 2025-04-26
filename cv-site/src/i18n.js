@@ -224,7 +224,7 @@ const resources = {
             funFacts: "Witzige Fakten über mich",
             fact1: "Ich wandere gerne… bis ich plötzlich nicht mehr kann.",
             fact2: "Gemeinsam mit einem großartigen Team habe ich den Gutenberg\nJugendverein in Craiova neu gegründet.",
-            fact3: "Pfadfindertum ist ein Teil von mir – sieh unten, wie ich sie lebe.",
+            fact3: "Pfadfindertum ist ein Teil von mir – sieh unten, wie ich es lebe.",
 
             leaveMessage: "Hinterlasse mir eine Nachricht",
             writeMessage: "Schreibe hier deine Gedanken...",
